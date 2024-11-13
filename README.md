@@ -1,102 +1,102 @@
 # Bloomme
 
-Este proyecto es un backend construido con Node.js, Express, TypeScript, y Sequelize.
+This project is a backend built with Node.js, Express, TypeScript, and Sequelize.
 
 ## Tabla de Contenidos
 
-1. [Requisitos](#requisitos)
-2. [Instalación](#instalación)
-3. [Configuración](#configuración)
-4. [Ejecución](#ejecución)
-5. [Estructura del Proyecto](#estructura-del-proyecto)
+1. [Requirements](#requirements)
+2. [Installation](#installation)
+3. [Configuration](#configuration)
+4. [Running the Server](#running-the-server)
+5. [Project Structure](#project-structure)
 6. [Endpoints](#endpoints)
-7. [Tecnologías Utilizadas](#tecnologías-utilizadas)
+7. [Technologies Used](#technologies-used)
 
-## Requisitos
+## Requirements
 
-Asegúrate de tener instaladas las siguientes herramientas:
+Ensure you have the following tools installed:
 
 - [Node.js](https://nodejs.org/)
 - [npm](https://www.npmjs.com/) o [yarn](https://yarnpkg.com/)
 
-## Instalación
+## Installation
 
-Clona el repositorio y ejecuta los siguientes comandos:
+Clone the repository and run the following commands:
 
 ```bash
 git clone <URL-del-repositorio>
-cd <nombre-del-proyecto>
+cd <project-name>
 npm install
 ```
 
-Si usas yarn:
+If you're using yarn:
 
 ```bash
 yarn install
 ```
 
-## Configuración
+## Configuration
 
-Crea un archivo .env en la raíz del proyecto.
+Create a .env file at the root of the project.
 
-Agrega las variables de entorno necesarias, como la configuración de la base de datos. Ejemplo:
+Add the necessary environment variables, such as database configuration. Example:
 
 ```plaintext
-DB_HOST=            # Dirección del servidor de la base de datos (ej. localhost)
-DB_PORT=            # Puerto de la base de datos (ej. 5432 para PostgreSQL)
-DB_NAME=            # Nombre de la base de datos
-DB_USER=            # Usuario de la base de datos
-DB_PASSWORD=        # Contraseña de la base de datos
-GEMINI_API_KEY=     # Clave API de Gemini para integración externa
-JWT_SECRET=         # Clave secreta para firmar tokens JWT
-PORT_INDEX=         # Puerto en el que se ejecutará el servidor (ej. 3000)
+DB_HOST=            # Database server address (e.g., localhost)
+DB_PORT=            # Database port (e.g., 5432 for PostgreSQL)
+DB_NAME=            # Database name
+DB_USER=            # Database user
+DB_PASSWORD=        # Database password
+GEMINI_API_KEY=     # API key for external Gemini integration
+JWT_SECRET=         # Secret key for signing JWT tokens
+PORT_INDEX=         # Port where the server will run (e.g., 3000)
 ```
 
-## Ejecución
+## Running the Server
 
-Para ejecutar el servidor en modo desarrollo:
+To run the server in development mode:
 
 ```bash
 npm run dev
 ```
 
-En caso de usar yarn:
+If using yarn:
 
 ```bash
 yarn dev
 ```
 
-Para construir y ejecutar en producción:
+To build and run in production:
 
 ```bash
 npm run build
 npm start
 ```
 
-## Estructura del Proyecto
+## Project Structure
 
 
 ```plaintext
 ├── src
-│   ├── config        # Configuración (Base de datos, etc.)
-│   ├── controllers   # Controladores de las rutas
-│   ├── models        # Modelos de Sequelize
-│   ├── routes        # Rutas de Express
-│   ├── services      # Lógica de negocio
-│   └── index.ts      # Archivo principal
-├── .env.example      # Ejemplo de archivo .env
-└── README.md         # Documentación del proyecto
+│   ├── config        # Configuration (Database, etc.)
+│   ├── controllers   # Route controllers
+│   ├── models        # Sequelize models
+│   ├── routes        # Express routes
+│   ├── services      # Business logic
+│   └── index.ts      # Main file
+├── .env.example      # Sample .env file
+└── README.md         # Project documentation
 ```
 
 ## Endpoints
 
-    - GET /api/users - Obtener todos los usuarios.
-    - POST /api/users - Crear un usuario.
-    - GET /api/users/:id - Obtener un usuario por ID.
+    -   GET /api/users - Get all users.
+    -   POST /api/users - Create a user.
+    -   GET /api/users/:id - Get a user by ID.
 
-## Tecnologías Utilizadas
+## Technologies Used
 
-    Node.js - Entorno de ejecución para JavaScript
-    Express - Framework web para Node.js
-    TypeScript - Superset de JavaScript con tipado estático
-    Sequelize - ORM para trabajar con bases de datos SQL
+    -   Node.js - JavaScript runtime environment
+    -   Express - Web framework for Node.js
+    -   TypeScript - JavaScript superset with static typing
+    -   Sequelize - ORM for working with SQL databases
